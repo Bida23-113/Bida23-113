@@ -1,28 +1,30 @@
-* {
+body, h1, h2, p, ul, nav, footer {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0 ;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arail, sans-serif;
   background-color: #f8f8f8;
 }
-.navbar {
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #000;
-  color: #fff;
 }
-.nav-links {
+nav img {
+  height: 40px;
+}
+nav ul {
   list-style-type: none;
-  display: flex;
 }
-.nav-linls li {
-  margin-right: 20px;
+nav ul li {
+  display: inline;
+  margin-left: 20px;
 }
-.nav-links a {
+nav ul li a {
   text-decoration: none;
   color: #fff;
 }
