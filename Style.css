@@ -52,12 +52,12 @@ nav ul li a {
   font-size: 1.2em;
 }
 .trending,
-.recommended {
+.upcoming {
   padding: 50px 0;
   text-align: center;
 }
 .trending-content,
-.recommended-content {
+.upcoming-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
