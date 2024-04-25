@@ -2,6 +2,11 @@ body, h1, h2, p, ul, nav, footer {
   margin: 0;
   padding: 0 ;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arail, sans-serif;
   background-color: #f8f8f8;
