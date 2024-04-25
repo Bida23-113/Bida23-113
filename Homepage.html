@@ -1,7 +1,32 @@
 <html>
   <head>
     <title>Warner Bros.</title>
-    <link rel""
+    <link rel"" 
+    <script>
+      let slideIndex= 0;
+      showSlides ();
+      function showSlides() {
+        let i;
+        let slides= document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slide.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000);
+      }
+      function moveSlide(n) {
+        slideIndex += n;
+        let slides = document.getElementsByClassName("slide")
+        if (slideIndex > slide.length) {slideIndex =1}
+        if (slideIndex < 1) {slideIndex = slides.length}
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display ="none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
   </head>
   <body>
     <nav>
@@ -17,7 +42,18 @@
     </nav>
     <section id="main-content">
       <div class="carousel">
+        <div class="slide">
+          <img src="" alt="Img 1">
       </div>
+       <div class="slide">
+          <img src="" alt="Img 2">
+        </div>
+        <div class="slide">
+          <img src="" alt="Img 3">
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="prev" onclick="moveSlide(1)">&#10095;</button>
       <div class="categories">
         <h2>Explore by Category</h2>
         <div class="category">
