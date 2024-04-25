@@ -1,0 +1,31 @@
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2000px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.movie { 
+background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.movie h2 {
+  font-size: 1.2em;
+  margin: 10px;
+}
+.movie p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 10px 10px;
+}
+.movie:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+}
