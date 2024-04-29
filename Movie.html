@@ -1,21 +1,72 @@
-<html>
-  <head>
-    <title>Movies</title>
-    <link rel="Stylesheet" href="Movies.css">
-  </head>
-  <body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Movie Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 20px;
+        }
+        .movie {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .movie:hover {
+            transform: translateY(-5px);
+        }
+        .movie img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .movie:hover img {
+            transform: scale(1.1);
+        }
+        .movie-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <h1>Movie Section</h1>
-      <div class="container">
-        <div class="movie">
-          <img class="movie-poster" src="" alt="Black Adam">
+        <h1>Beautiful Movie Section</h1>
+        <div class="movie-grid">
+            <div class="movie">
+                <img src="movie1.jpg" alt="Movie 1">
+                <div class="movie-title">Movie 1</div>
+            </div>
+            <div class="movie">
+                <img src="movie2.jpg" alt="Movie 2">
+                <div class="movie-title">Movie 2</div>
+            </div>
+            <!-- Add more movie posters as needed -->
         </div>
-        <div class="movie">
-          <img class="movie-poster" src="Black Adam.jpeg" alt="Wonka">
-        </div>
-        <div class="movie">
-          <img class="movie-poster" src="" allt="The Witches">
-        </div>
-      </div>
-  </body>
+    </div>
+</body>
 </html>
