@@ -8,3 +8,9 @@ body {
   padding: 10px;
   margin: 10px 0;
 }
+.item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
